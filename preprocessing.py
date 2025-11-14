@@ -157,10 +157,7 @@ class HolographicDataPreprocessor:
         return df
 
     def _extract_holographic_features(self, df, target_column):
-        """
-        Extract holographic features as defined in Equation 6 of the paper
-        X_holo = F_temporal ⊕ F_spatial ⊕ F_behavioral ⊕ F_correlation
-        """
+       
         logger.info("Step 4: Extracting holographic features")
 
         feature_columns = [col for col in df.columns if col != target_column]
